@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* VIDEO SFONDO */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* Overlay per migliorare la leggibilità del testo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 20%;
+    z-index: -1;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7);
+    border: 2px solid red;
+}
+
+/* IMMAGINE PROFILO */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0px 0px 10px red;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: red;
+    text-transform: uppercase;
+}
+
+.profile p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* BOTTONI */
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 93%;
+    padding: 12px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, red, #ff4500);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+}
+
+/* LOGHI ICON */
+.btn img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 15px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
+}
+
+/* SEZIONE EBOOK */
+.ebook-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.ebook-section img {
+    width: 100px; /* Dimensione della copertina */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.ebook-text {
+    text-align: left;
+    color: white;
+}
+
+.ebook-text h3 {
+    color: red;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.ebook-text p {
+    font-size: 14px;
+    margin: 5px 0;
+}
