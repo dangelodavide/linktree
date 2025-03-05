@@ -8,6 +8,7 @@ body {
     color: white;
 }
 
+/* VIDEO SFONDO */
 #bg-video {
     position: fixed;
     top: 50%;
@@ -17,18 +18,9 @@ body {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -2;
-    pointer-events: none;
 }
 
-@media (max-width: 768px) {
-    #bg-video {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-}
-
-
+/* Overlay per migliorare la leggibilità del testo */
 .overlay {
     position: fixed;
     top: 0;
@@ -40,6 +32,7 @@ body {
     z-index: -1;
 }
 
+/* CONTAINER */
 .container {
     max-width: 400px;
     margin: 50px auto;
@@ -50,6 +43,7 @@ body {
     border: 2px solid red;
 }
 
+/* IMMAGINE PROFILO */
 .profile img {
     width: 100px;
     height: 100px;
@@ -67,10 +61,11 @@ body {
 }
 
 .profile p {
-    color: #ffffff;
+    color: #aaa;
     font-size: 14px;
 }
 
+/* BOTTONI */
 .links {
     margin-top: 20px;
     display: flex;
@@ -99,12 +94,12 @@ body {
     position: relative;
 }
 
+/* LOGHI ICON */
 .btn img {
     width: 28px;
     height: 28px;
     position: absolute;
     left: 15px;
-    filter: invert(100%);
 }
 
 .btn:hover {
@@ -112,6 +107,7 @@ body {
     box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
 }
 
+/* SEZIONE EBOOK */
 .ebook-section {
     display: flex;
     align-items: center;
@@ -154,11 +150,12 @@ body {
     margin: 5px 0;
 }
 
+/* BOTTONE LEGGI DENTRO IL CONTAINER */
 .ebook-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 87%;
+    width: 86%;
     padding: 10px 15px;
     font-size: 16px;
     margin-top: 10px;

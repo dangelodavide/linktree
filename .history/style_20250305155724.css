@@ -17,17 +17,7 @@ body {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -2;
-    pointer-events: none;
 }
-
-@media (max-width: 768px) {
-    #bg-video {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-}
-
 
 .overlay {
     position: fixed;
@@ -67,7 +57,7 @@ body {
 }
 
 .profile p {
-    color: #ffffff;
+    color: #aaa;
     font-size: 14px;
 }
 
